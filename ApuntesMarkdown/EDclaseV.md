@@ -2,25 +2,60 @@
 
 # Clase V
 
-
-
 ## Variación de parámetros con factor integrante
+
+El método Bernoulli lo que hace es que es una ecuación que depende de este método, es decir es una variante. El método Bernoulli tiene una potencia de la x del lado derecho de la ecuación, lo cual, es una característica especial.
+
+
+
 
 $$
 \frac{dy(x)}{dx} = f(x) \\
+Despejamos \ \ para \ \ encontrar \ \ y:\\
 y = f(x)dx \\
- \frac{dzy}{dx} = f(x) \\
+Integramos \ \ de \ \ ambos \ \ lados \ \ para \ \ encontrar \ \ y:\\
+\int dy(x) = \int f(x) dx\\
+y = f(x) dx\\
+$$
+
+
+
+- Este resultado lo usamos la vez pasada para estudiar la derivada de un producto como: $z \cdot y$
+
+$$
+\frac{dzy}{dx} = f(x) \\
 dzy = f(x)dx \\
+Integramos \ \ para \ \ obtener \ \ el \ \ valor \ \ del \ \ producto:\\
 \int dzy = f(x)dx \\
 zy = \int f(x)dx \\
+Despejamos \ \ y:\\
 y = \frac{\int f(x)dx}{z}\\
-esto \ no \ siempre \ ocurrira \\
-z\frac{dy}{dx} + \frac{dz}{dx} y = f(x) \\
+$$
+
+Pero por otro lado tenemos que la derivada de un producto es igual a $z\frac{dy}{dx} + \frac{dz}{dx}y = f(x)$
+
+- Por lo que si tenemos una ecuación diferencial de esta forma, la podemos escribir como la derivada de un producto y resolverlo con la formula del valor de y que sacamos anteriormente.
+- Pero estas ecuaciones diferenciales no serian practicas, por lo que necesitamos una forma mas general, mas practica en donde $P(x)$ y $Q(x)$  pueden ser cualquier función y no tenemos ninguna derivada de un producto.
+
+$$
 por \ lo  \ que \ la \ ecuacion \ mas \ general \ tendra \ la \ forma: \\
 \frac{dy}{dx} + P(x)y = Q(x) \\
+Pero \ \ no \ \ es \ \ la \ \ misma\\
+si \ \ multiplico \ \ todo \ \ por \ \  z \ \ tendria \ \ la \ \ misma:\\
 Z\frac{dy}{dx} + zP(x)y = zQ(x)\\
+Entonces:\\
+\frac{dz}{dx} = zP(x)
+$$
 
+- Pero, no todas las formulas las puedo escribir como la derivada de un producto.
+- Por lo que para poder escribir las ecuaciones de la forma: $\frac{dy}{dx} + P(x)y = Q(x)$
+- Se necesitaria tener algo que multiplicara todo, lo cual es el factor integrante.
+- Entonces debemos encontrar la z que es el factor integrante.
+
+$$
+Divorciamos \ \ variables:\\
 \frac{dz}{z} = p(x)dx\\
+Integramos \ \ de \ \ los \ \ dos \ \ lados:\\
 \int \frac{dz}{z} = \int P(x)dx\\
 \ln z = \int P(x) dx \\
 e^{\ln z} = e^{\int P(x) dx} \\
@@ -28,9 +63,11 @@ obtenemos \ el \ factor \ integrante: \\
 I = z = e^{\int P(x)dx}
 $$
 
+- Teniendo esta derivada del producto, puedo aprovechar que ya se como encontrar la respuesta:
+- $y = \frac{\int f(x)dx}{z}$
+- Pero $f(x)$ ya no es la que teniamos inicialmente, ahora es 
 
-
-### Ejercicio 
+### Ejercicio Glucosa
 
 Tenemos un ejercicio respecto al cambio de glucosa en la sangre respecto al tiempo:
 
@@ -42,7 +79,9 @@ De este modo planteamos la ecuación:
 $$
 \frac{dG(t)}{dt} = a - KG \\
 \frac{dG}{dt} + KG = a \\
+Planteamos \ \ la \ \ ecuación \ \ general:\\
 \frac{dG}{dt} + PG = Q \\
+Obtenemos \ \ factor \ \ integrante:\\
 I = e^{\int Kdt} = e^{Kt}
 $$
 La ecuación diferencial que queremos resolver es 
@@ -58,15 +97,19 @@ de^{Kt}G = ae^{Kt}dt \\
 Integramos \\
 \int de^{Kt}G = \int ae^{Kt}dt \\
 Despejamos \ Glucosa: \\
-G = \frac{\frac{a}{k} e^{kt} + C}{e^{kt}}
+G = \frac{\frac{a}{k} e^{kt} + C}{e^{kt}}\\
+G = \frac{a}{k} + \frac{C}{e^{kt}}
 $$
 
 ### Ejercicio
 
 $$
 x \frac{dy}{dx} + 6y + 2x^4 = 0 \\
+El \ \ modelo:\\
 \frac{dy}{dx} + P(x)y = Q(x) \\
+Tenemos \ \ que \ \ transformarlo \ \ al \ \ modelo\\
 x \frac{dy}{dx} + 6y = -2x^4 \\
+Dividimos \ \ entre \ \ x \ \ para \ \ que \ \ tenga \ \ la \ \ forma:\\
 \frac{dy}{dx} + \frac{6}{x}y = -2x^3
 $$
 
@@ -77,15 +120,21 @@ $$
 Multiplicamos:
 $$
 x^6 \cdot \frac{dy}{dx} + x^6 \cdot \frac{6}{x}y = x^6 \cdot -2x^3 \\
-x^6  \frac{dy}{dx} + x^6 \frac{6}{x}y =  -2x^9
+x^6  \frac{dy}{dx} + x^6 \frac{6}{x}y =  -2x^9\\
+x^6  \frac{dy}{dx} +  6x^5y =  -2x^9
 $$
 Despejamos y:
 
-.
+$$
+Reducimos:\\
+\frac{dx^6y}{dx} = -2x^9\\
+Integramos:\\
+\int \frac{dx^6y}{dx} = \int -2x^9\\
+x^6y = \frac{-2x^{10}}{10} + C\\
+y = \frac{-2x^{10}}{10x^6} + \frac{C}{x^6}\\
+y = \frac{-2x^4}{10} + \frac{C}{x^6}
+$$
 
-.
-
-.
 
 ### Integral necesaria para el ejercicio 4
 
@@ -125,13 +174,20 @@ multiplicamos:
 $$
 x^5 \cdot \frac{dy}{dx} + x^5 \cdot \frac{5}{x}y = x^5 \cdot x \\
 x^5  \frac{dy}{dx} + x^5 \frac{5}{x}y = x^6 \\
-x^5  \frac{dy}{dx} + 5x^4y = x^6 \\
+x^5  \frac{dy}{dx} + 5x^4y = x^6 \\
 $$
 Despejamos y:
-
-
-
-
+$$
+Simplificamos:\\
+\frac{dx^5y}{dx} = x^6\\
+integramos \ \ a \ \ ambos \ \ lados:\\
+\int \frac{dx^5y}{dx} = \int x^6\\
+x^5y = \frac{x^7}{7} + C\\
+Despejamos:\\
+y = \frac{x^7}{7x^5} + \frac{C}{x^5}\\
+Resultado\\
+y = \frac{x^2}{7} + \frac{C}{x^5}
+$$
 
 -------------------------------------------------------------
 
@@ -169,10 +225,6 @@ $$
    $$
 
    
-
-
-
-
 
 ------------------------------------------------------------------------------------------------------------------
 
