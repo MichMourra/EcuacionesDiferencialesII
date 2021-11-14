@@ -1,6 +1,6 @@
 # Ecuaciones diferenciales 2
 
-# Clase IV
+# Clase III
 
 
 
@@ -10,10 +10,13 @@
 
 Estas ecuaciones tienen una forma especifica y el grado de la derivada depende del valor del coeficiente.
 
+- El orden de la derivada corresponde al valor del coeficiente
+
 - Hay funciones que se derivan y se integran dentro de su familia
-  - Polinomios
-  - Exponenciales
-  - Senos-Cosenos
+  - Polinomios : Al derivarlos obtengo un polinomio y al integrarlos obtengo otro polinomio.
+  - Exponenciales: Al derivarlo se obtiene una exponencial y al integrarlos se obtiene otra exponencial.
+  - Senos-Cosenos: Como una pareja de funciones, al derivarlo e integrarlo se mantienen en senos y cosenos.
+- Por lo que estas funciones se mantienen dentro de la misma familia de modo que se pueden cancelar entre si y dar 0.
 
 Planteamiento
 $$
@@ -36,9 +39,21 @@ Escribiremos una ecuación de Cauchy-Euler:
    y = x^{\lambda}
    $$
    
-3. Ahora debemos ver cual de las soluciones nos conduce por el camino mas sencillo
+   - En estos casos la solución consistia en encontrar los coeficientes.
+   
+3. Ahora debemos ver cual de las soluciones nos conduce por el camino mas sencillo.
 
    ### x a la lambda
+
+   - Haremos la demostración de la exponencial
+
+   $y = e^{Dx}$
+
+   Planteamos una ecuación de Cauchy-Euler.
+
+   La clave es que al final de hacer las derivadas, se tiene que cancelar todo y darnos 0.
+
+   - **Lo que se aconseja es probar con la evaluación $y = x^{\lambda}$**
 
    Primero trataremos sustituyendo y por x a la lambda
    $$
@@ -172,5 +187,7 @@ $$
    x^2 \frac{d^2y}{dx^2} - 3x \frac{dy}{dx} - 2y = 0\\
    $$
 
+   **Solución**
    
+   $y = C_1 x^{2 + \sqrt{6}} + C_2 x^{2 - \sqrt{6}}$
 
