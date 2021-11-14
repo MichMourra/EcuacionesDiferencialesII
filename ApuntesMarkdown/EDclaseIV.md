@@ -1,6 +1,14 @@
 # Ecuaciones diferenciales clase IV
 
+El trabajo de hoy ya lo han hecho 15 generaciones antes y consiste en que los alumnos descubren el método haciendo estos 16 ejercicios de modo que el alumno desarrolle una forma de resolverlo.
 
+**¿Qué es el factor integrante?**
+
+El **factor integrador**, también conocido como *factor de integración* o *factor integrante* de una [ecuación diferencial](https://es.wikipedia.org/wiki/Ecuación_diferencial)*,* se define como una [función](https://es.wikipedia.org/wiki/Función_matemática) (usualmente representada por la letra griega μ) que al multiplicarse por una ecuación diferencial no exacta, puede convertirla en una ecuación diferencial exacta.
+
+Usar el factor integrador como un método de resolución de ecuaciones diferenciales requiere de algunos aspectos a tomar en cuenta.
+
+![image-20211114135427675](C:\Users\10\AppData\Roaming\Typora\typora-user-images\image-20211114135427675.png)
 
 ## Resuelve para Y
 
@@ -254,7 +262,17 @@ $\frac{d}{dx} x^n = nx^{n-1}$
 
 15. $\frac{dy}{dx} + \frac{2}{x}y = x + 3$
 
+**Respuesta**
 
+$x^2 \frac{dy}{dx} + 2xy = x^3 + 3x^2$
+
+$\frac{dx^2y}{dx} = x^3 + 3x^2$
+
+$x^2y = \frac{x^4}{4} + \frac{3x^3}{3} + C$
+
+$y = \frac{1}{4}x^2 + x + C$
+
+$e^{2 \log x} = e^{\log x^2} = x^2$
 
 ------------------------------------------------------
 
@@ -270,11 +288,15 @@ $\frac{dI}{dx} = IP$
 
 $\frac{dI}{I} = Pdx$
 
+$e^{\int P(x) dx} \frac{dy}{dx} + e^{\int P(x) dx} P(x)y = e^{\int P(x) dx} Q(x)$
+
 $\int \frac{dI}{I} = \int Pdx$
 
 $ln I = \int Pdx$
 
 $I = e^{\int Pdx}$
+
+$I = e^{5P(x) dx}$
 
 -----------------------------------------
 
