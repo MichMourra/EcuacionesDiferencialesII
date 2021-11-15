@@ -58,7 +58,6 @@ $$
    2xy \ dx + (x^2 - 1) dy = 0
    $$
 
-2. 
 
 **Respuesta**
 $$
@@ -72,7 +71,6 @@ $$
    (e^{2y} - y \cos xy) \ dx + (2xe^{2y} - x \cos xy + 2y) \ dy = 0
    $$
 
-3. 
 
 **Respuesta**
 $$
@@ -111,7 +109,7 @@ $$
 (\tan x - \sin x \sin y ) \ dx + \cos x \cos y \ dy
 $$
 
-
+**Respuesta**
 
 
 
