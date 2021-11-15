@@ -73,14 +73,12 @@ $$
    f(x,y) = -4x^3 - 3x^2y^3 + 2y^2
    $$
 
-4. 
 
 **Respuesta:**
 
-
-
-
-
+$$
+\frac{\delta f(x,y)}{\delta x} = -12x^2 -6xy^3\\\frac{\delta f(x,y)}{\delta y} =  - 9 x^2y^2 + 2y\\\frac{\delta^2 f(x,y)}{\delta x^{2}} = -24x-6y^3 \\\frac{\delta^2 f(x,y)}{\delta x \delta y} = -18xy^2 \\\frac{\delta^2 f(x,y)}{ \delta y \delta x} = -18xy^2\\\frac{\delta^2 f(x,y)}{\delta y^{2}} = -18y^2\\Diferencial \ \ total: \\df(x,y) = (-12x^2 -6xy^3) dx + (- 9 x^2y^2 + 2y)dy
+$$
 
 
 -----------------------------------------------------------------------------------------------------
@@ -108,7 +106,6 @@ $$
    f(x,y) = -5e^{3x - 4y}
    $$
 
-6. 
 
 **Respuesta:**
 
@@ -190,10 +187,10 @@ $$
 
 **Respuesta:**
 $$
-
+\frac{2xy^4}{4} + \frac{6x^2y^3}{3} + \frac{2y^3}{3}\\
+Simplificamos:\\
+\frac{1}{2} xy^4 + 2x^2y^3 + \frac{2}{3}y^3
 $$
-
-
 
 
 
@@ -204,8 +201,10 @@ $$
    \int xy \ dx
    $$
 
-
-
+**Respuesta**
+$$
+\frac{x^2y}{2}
+$$
 
 
 ------------------------------------------------------------------------------
@@ -214,4 +213,8 @@ $$
    \int xy \ dy
    $$
 
-5. 
+
+**Respuesta**
+$$
+\frac{xy^2}{2}
+$$
