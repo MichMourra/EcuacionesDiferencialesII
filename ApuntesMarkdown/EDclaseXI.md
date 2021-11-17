@@ -168,6 +168,7 @@ $$
 
 - Cuando tengo la misma base, las propiedades de las integrales dicen que se suman los exponentes
 - Podemos factorizar la t
+- Todas las formulas las encontraremos en las tablas
 
 $$
 L\{f(t)\} = \int_0^\infty e^{-st}f(t)dt\\
@@ -175,25 +176,55 @@ f(t) = e^{at}\\
 \int_0^\infty e^{-st} e^{at} dt = \int_0^\infty e^{at - st}dt\\
 \int_0^\infty e^{(a-s)t}dt\\
 \int e^{kt} dt = \frac{e^{kt}}{k}\\
-\frac{e^{(a-s)t}}{a-s} |_0^\infty = (0-\frac{}{})
+\frac{e^{(a-s)t}}{a-s} |_0^\infty = (0-\frac{1}{-(s-a)}) = \frac{1}{s-a}
 $$
 
+## Transformada de la primera derivada
 
+- Para este caso si haremos la vaca con el uniforme
+- Vamos a poner la integral con el núcleo de la transformada.
+
+$$
+L\{f(t)\} = \int_0^\infty e^{-st} f(t) dt\\
+L \left\{  \frac{df(t)}{dt}\right\} = \int_0^\infty e^{-st} \frac{df(t)}{dt}dt\\
+$$
+
+- Hacemos la vaca vestida de uniforme al efectuar el método de integración por partes.
+
+$$
+u = e^{-st}\ \ \ \ \ \ dv = \frac{df(t)}{dt}dt\\
+du = -se^{-st} \ \ \ \ \ \ v = f(t)\\
+e^{-st} f(t) |_0^\infty - \int_0^\infty -se^{-st} f(t) dt = -f(0) + s \int_0^\infty e^{-st}f(t)dt\\
+$$
+
+La integral del inicio con la que ya tenemos tras realizar el método de integración por partes son iguales.
+
+- Entonces la transformada de la derivada sera $-f(0) + sF$
+- Para transformar la derivada tengo que tener el valor inicial, es decir, $f(0)$
+- Gracias a esto tendremos funciones donde no hay derivadas, lo cual lo vuelve mas sencillo.
+
+$$
+L \{f(t)\} = \int_0^\infty e^{-st} f(t) dt = F\\
+L \left\{ \frac{df(t)}{dt}\right\} = -sF - f(o)\\
+$$
+
+- La próxima clase aprenderemos a transformar y anti transformar.
 
 ## Transformada de la segunda derivada
 
 - Hacemos la tablita para ver que derivo y que integro.
 
 $$
-L\{ \frac{d^2f(t)}{dt^2}\} = \int_0^\infty e^{-st \frac{d^2 f(t)}{dt^2}}dt \\
+L \left \{ \frac{d^2f(t)}{dt^2}\right \} = \int_0^\infty e^{-st}\frac{d^2 f(t)}{dt^2}dt \\
 u = e^{-st}\\
-du = se^{-st}dt
-dv = \frac{d^2f(t)}{dt^2}\\
+du = se^{-st}dt \ \ \ \ \ dv = \frac{d^2f(t)}{dt^2}\\
 v = \frac{df(t)}{dt}\\
-e^{-st} \frac{df(t)}{dt} |_0^\infty  - \int_0^\infty - e^-st \frac{df(t)}{dt^2}
+e^{-st} \frac{df(t)}{dt} |_0^\infty  - \int_0^\infty - se^{-st} \frac{df(t)}{dt}dt\\
+-\frac{df(0)}{dt} + s \int_0^\infty e^{-st} \frac{df(t)}{dt} dt = - \frac{df(0)}{dt} + s \left( sF - f(0)\right)\\
+L \left \{ \frac{d^2f(t)}{dt^2}\right \} = \int_0^\infty -st \frac{d^2f(t)}{dt^2} dt = s^2 F - sf(0) - \frac{df(0)}{dt}\\
+Entonces:\\
+\frac{d^3f(t)}{dt^3} dt = s^3F - s^2f(0) - s\frac{df(0)}{dt} - \frac{d^2f(0)}{dt^2}
 $$
-
-
 
 
 
